@@ -36,7 +36,7 @@ public class BeerElementalEntity extends Monster {
     }
 
     @Override
-    public @NotNull EntityDimensions getDimensions(Pose pose) {
+    protected @NotNull EntityDimensions getDefaultDimensions(Pose pose) {
         return EntityDimensions.scalable(1F, 2F);
     }
 
